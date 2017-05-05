@@ -1,9 +1,9 @@
 function replace_all_in_dir(dir,replace_str, replace_with_str, encoding){
 return new Promise((resolve,reject)=>{
-    if(String.ReplaceAll === undefined) require("./lib/str_replace_all_proto_promise.js")()
-    let fs_readdir_promise = require("./lib/fs_readdir_promise.js")
-    let fs_readfile_promise = require("./lib/fs_readfile_promise.js")
-    let fs_writefile_promise = require("./lib/fs_writeFile_promise.js")
+    if(String.ReplaceAll === undefined) require("./str_replace_all_proto_promise.js")()
+    let fs_readdir_promise = require("./fs_readdir_promise.js")
+    let fs_readfile_promise = require("./fs_readfile_promise.js")
+    let fs_writefile_promise = require("./fs_writeFile_promise.js")
     fs_readdir_promise(dir).then((filenames)=>{
         Promise.all(
             filenames.map(function(filename){
@@ -34,9 +34,9 @@ return new Promise((resolve,reject)=>{
 }
 //HOW TO USE
 // replace_all_in_dir(
-//     "//showtex.com/home/users/mlem/POWER BI/POWER BI queries/", //dont forget to make it end in with '/'
-//     "ShowTex Belgie NV",//string that you wish to replace in all the files
-//     "ShowTex Hong Long LTD",//string that you wish to replace the previous string with
+//     "c:/query files/", //dont forget to make it end in with '/'
+//     "replace string",//string that you wish to replace in all the files
+//     "with this string",//string that you wish to replace the previous string with
 //     "utf-8"//encoding 
 // ).then((responses)=>{
 //     //returns an array of dir+filename that were saved
