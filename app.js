@@ -1,4 +1,4 @@
-function replace_all_in_dir(dir,replace_str, replace_with_str, encoding){
+module.exports = function replace_all_in_dir(dir,replace_str, replace_with_str, encoding){
 return new Promise((resolve,reject)=>{
     if(String.ReplaceAll === undefined) require("./str_replace_all_proto_promise.js")()
     let fs_readdir_promise = require("./fs_readdir_promise.js")
