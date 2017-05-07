@@ -11,7 +11,7 @@ No report of replacements is given. But it would be easy to modify it to do so.
 ```javascript
 let replace_all_in_dir = require("./app.js")
 replace_all_in_dir(
-    "c:/queries/", //dont forget to make it end in with '/'
+    "c:/queries/", //dont forget to make it end with '/'
     "replace string",//string that you wish to replace in all the files
     "with this tring",//string that you wish to replace the previous string with
     "utf-8"//encoding 
