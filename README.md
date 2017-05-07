@@ -1,5 +1,6 @@
-# replace_all_in_directory_files
-Replace all occurrences of a string in all files in a directory with another string
+# replace_all_str_in_directory
+Iterate all files in a directory async
+Replace all occurrences of a string with another string.
 ## How it works
 It reads the directory with filestream and returns array of filenames
 for each filename a promise made inside a promise_all function is generated.
