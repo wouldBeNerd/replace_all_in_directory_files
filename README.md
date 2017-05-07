@@ -1,6 +1,7 @@
 # replace_all_strings_in_directory_promise
 Iterate all files in a directory async
 Replace all occurrences of a string with another string.
+## NO BACKUP IS TAKEN OF YOUR FILES. THIS WILL OVERWRITE ALL EXISTING FILES IN THE DIRECTORY.
 ## How it works
 It reads the directory with filestream and returns array of filenames
 for each filename a promise made inside a promise_all function is generated.
