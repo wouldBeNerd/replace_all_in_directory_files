@@ -1,4 +1,4 @@
-# replace_all_str_in_directory
+# replace_all_strings_in_directory_promise
 Iterate all files in a directory async
 Replace all occurrences of a string with another string.
 ## How it works
